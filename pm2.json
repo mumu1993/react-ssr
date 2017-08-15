@@ -1,0 +1,13 @@
+{
+    "apps": [{
+        "name": "fatu-web",
+        "script": "./server.js",
+        "error_file": "./logs/err.log",
+        "out_file": "./logs/out.log",
+        "env": {
+            "NODE_ENV": "production"
+        },
+        "watch": false,
+        "log_date_format": "YYYY - MM - DD HH: mm Z",
+    }]
+}

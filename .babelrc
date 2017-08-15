@@ -1,0 +1,20 @@
+{
+    "plugins": [
+        [
+            "module-resolver", {
+                "root": ["."],
+                "alias": {
+                    "styles": "./static/styles",
+                    "images": "./static/images"
+                },
+                "cwd": "babelrc"
+            }
+        ],
+        [
+            "wrap-in-js", {
+                "extensions": ["css$", "scss$"]
+            }
+        ]
+    ],
+    "presets": ["react", "es2015", "stage-1", "next/babel"]
+}

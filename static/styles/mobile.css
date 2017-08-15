@@ -1,0 +1,1351 @@
+/* ======================================reset-start========================================= */
+
+body, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li, form, table, th, td, a, img, span, strong, var, em, input, textarea, select, option, hr {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: "STHeiti", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    letter-spacing: 0;
+}
+
+html, body {
+    text-align: left;
+    position: relative;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    width: 100%;
+    display: block;
+}
+
+input, select, textarea, button {
+    outline: 0;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, strong, var, em {
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #55A5F6;
+    text-decoration: none;
+}
+
+
+/* ===========================================reset-end========================================== */
+
+
+/* ===========================================bootstrapReset-start========================================== */
+
+.clearfix:before {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.hide {
+    display: none;
+}
+
+.lazyload-placeholder {
+    display: inline-block;
+}
+
+
+/* ===========================================bootstrapReset-end========================================== */
+
+
+/* ===========================================common-start========================================== */
+
+@media (max-width: 767px) {
+    .fatu-container-fuild {}
+    .fatu-container {
+        /*width: 3.04rem;
+        min-width: 3.04rem;*/
+        margin: 0 auto;
+        /*overflow: hidden;*/
+    }
+    .index-right {
+        overflow: hidden;
+        position: relative;
+        background: #f5faf7;
+    }
+    .mask {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        position: fixed;
+        top: 0.48rem;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+
+a[title='站长统计'] {
+    display: none;
+}
+
+
+/*header-start*/
+
+@media (max-width: 767px) {
+    .common-header {
+        background: #fff;
+        height: 0.48rem;
+        border-bottom: 0.01rem solid #E7E9ED;
+    }
+    .header-logo {
+        float: left;
+        width: 0.60rem;
+        height: 0.48rem;
+        background: url(/static/images/header-logo.png) 0px center no-repeat;
+        background-size: 0.60rem 0.20rem;
+    }
+    .header-con {
+        width: 3.04rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    .header-classify {
+        float: left;
+        height: 0.48rem;
+        overflow: hidden;
+    }
+    .header-classify li {
+        width: 1.80rem;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        text-align: center;
+        font-size: 0.16rem;
+        letter-spacing: 0;
+        border-bottom: 0.01rem solid transparent;
+        background: #fff;
+    }
+    .header-classify-moblie li {
+        border-bottom: 0.01rem solid #E7E9ED;
+    }
+    .header-classify li a {
+        color: #373737;
+        font-weight: 600;
+        font-size: 0.14rem;
+    }
+    .header-classify li a:hover {
+        color: #55A5F6;
+    }
+    .header-classify .header-all {
+        position: relative;
+    }
+    .header-classify .header-all span {
+        position: absolute;
+        top: 50%;
+        right: 0.6rem;
+        border-top: 5px solid #373737;
+        border-bottom: 5px solid transparent;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+    }
+    .header-classify-moblie {
+        height: auto;
+        width: 1.8rem;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        z-index: 100000;
+        margin-left: -0.9rem;
+        overflow: auto;
+        background: #fff;
+    }
+    .header-classify-moblie .header-all span {
+        position: absolute;
+        top: 50%;
+        right: 0.60rem;
+        margin-top: -0.04rem;
+        border-bottom: 5px solid #373737;
+        border-top: 5px solid transparent;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+    }
+    .header-more {
+        display: none;
+    }
+}
+
+
+/*header-end*/
+
+
+/*common-search-strat*/
+@media (max-width: 767px) {
+    .common-search-outer {
+        background-color: #FFE107;
+    }
+    .common-search {
+        height: 1rem;
+        padding: 0.38rem 0;
+        background: url('/static/images/search-bg.png') center center no-repeat;
+        background-size: cover;
+    }
+    .common-search-center {
+        width: 2.30rem;
+        height: 0.24rem;
+        background: #fff;
+        border-radius: 2px;
+         margin: 0 auto;
+    }
+    .common-search-import {
+        position: relative;
+    }
+    .common-search-import input {
+        width: 2.30rem;
+        height: 0.24rem;
+        background: #FBFBFB;
+        border-radius: 0.02rem;
+        font-size: 0.12rem;
+        color: rgba(0, 0, 0, 1);
+        padding: 0.06rem 0.10rem;
+    }
+    .common-search-import a {
+        position: absolute;
+        top: 0.06rem;
+        right: 0.10rem;
+        width: 0.12rem;
+        height: 0.12rem;
+        background: url('/static/images/nav_search2.png') 0 0 no-repeat;
+        background-size: 0.12rem 0.12rem;
+    }
+    .common-search-import a span {
+        display: none;
+    }
+    .common-search-hot {
+        display: none;
+    }
+    .small {
+        width: 2.30rem;
+        background: #fff;
+        position: absolute;
+        top: 16px;
+        right: 8px;
+    }
+    .small .common-search {
+        height: auto;
+        padding: 0;
+        background-image: none;
+    }
+    .small .common-search-center {}
+    .small .common-search-import input {
+        background: #FBFBFB;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+    }
+}
+
+
+
+
+/*common-search-end*/
+
+
+/*index-download-end*/
+
+@media (max-width: 767px) {
+    .index-download {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        width: 3.2rem;
+        height: 0.56rem;
+        line-height: 0.56rem;
+        background: #F9F9F9;
+        box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.10);
+    }
+    .index-download-appicon {
+        display: inline-block;
+        width: 0.42rem;
+        height: 0.42rem;
+        background: url('/static/images/app-icon.png') center no-repeat;
+        background-size: cover;
+        margin: 0.07rem 0.08rem;
+    }
+    .index-download-hint {
+        display: none;
+    }
+    .index-download-mobile {
+        display: inline-block;
+        width: 1.5rem;
+        height: 0.56rem;
+        line-height: 0.2rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .index-download-mobile .download-title {
+        position: absolute;
+        top: 0.13rem;
+        left: 0;
+        width: 1.5rem;
+        font-size: 0.14rem;
+        color: #373737;
+    }
+    .index-download-mobile .download-hint {
+        position: absolute;
+        top: 0.30rem;
+        left: 0;
+        width: 1.5rem;
+        font-size: 0.10rem;
+        color: rgba(0, 0, 0, 0.38);
+    }
+    .index-download-button {
+        display: inline-block;
+        float: right;
+        font-size: 0.12rem;
+        color: #FFFFFF;
+        background: #373737;
+        border-radius: 0.02rem;
+        /*width: 0.7rem;*/
+        height: 0.32rem;
+        padding: 0 0.08rem;
+        line-height: 0.32rem;
+        text-align: center;
+        margin: 0.12rem 0.08rem 0.12rem;
+        padding: 0 0.10rem;
+    }
+}
+
+
+/*index-download-end*/
+
+
+/*common-footer-end*/
+
+@media (max-width: 767px) {
+    .common-footer {
+        height: 1.23rem;
+        padding-top: 0.4rem;
+        margin-bottom: 0.58rem;
+    }
+    .common-footer p {
+        font-family: PingFangSC-Regular;
+        font-size: 0.10rem;
+        color: #CCD1D9;
+        padding-bottom: 0.04rem;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+
+/*common-footer-end*/
+
+
+/* ===========================================common-end========================================== */
+
+/* ===========================================index-main-start========================================== */
+
+
+/*newest-strat*/
+
+@media (max-width: 767px) {
+    .index-newest {
+        width: 3.04rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    .index-newest-list {
+        width: 3.12rem;
+        overflow: hidden;
+    }
+    .index-newest-list .index-newest-item {
+        width: 1.48rem;
+        min-height: 1.5rem;
+        margin: 0.08rem 0.08rem 0 0;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+    .index-newest-item a {
+        float: left;
+    }
+    .newest-cover-a {
+        display: block;
+        width: 1.48rem;
+        height: 0.9rem;
+        border-radius: 2px;
+    }
+    .newest-title {
+        font-size: 0.12rem;
+        color: #373737;
+        line-height: 0.16rem;
+        max-height: 0.32rem;
+        overflow: hidden;
+        margin-top: 0.04rem;
+    }
+    .newest-title:hover {
+        color: #55A5F6;
+    }
+    .newset-info {
+        float: left;
+        margin-top: 0.03rem;
+        height: 0.16rem;
+        overflow: visible;
+    }
+    .newset-culumn {
+        position: absolute;
+        top: 0.65rem;
+        left: 0.05rem;
+        font-size: 0.10rem;
+        color: #FFFFFF;
+        width: 0.48rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        text-align: center;
+        border: none;
+        border-radius: 0.02rem;
+        background: #5FDD5E;
+        overflow: hidden;
+    }
+    .newset-classify {
+        float: left;
+        height: 0.16rem;
+        line-height: 0.18rem;
+        margin-right: 0.1rem;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.10rem;
+        color: rgba(0, 0, 0, 0.54);
+    }
+    .newset-classify span {
+        float: left;
+        width: 0.14rem;
+        height: 0.14rem;
+        margin-top: 0.01rem;
+        margin-right: 0.05rem;
+    }
+    .newset-author {
+        float: left;
+        font-size: 0.10rem;
+        color: rgba(0, 0, 0, 0.54);
+        height: 0.16rem;
+        line-height: 0.17rem;
+        min-width: 0.8rem;
+        max-width: 0.93rem;
+        overflow: hidden;
+    }
+    .newset-author span {
+        float: left;
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 50%;
+        margin-right: 0.04rem;
+    }
+    .newset-time {
+        display: none;
+    }
+    .newest-images {
+        display: none;
+    }
+    .index-newest-more {
+        position: absolute;
+        bottom: 0.10rem;
+        left: 50%;
+        z-index: 100;
+        margin-left: -0.60rem;
+        width: 1.20rem;
+        height: 0.30rem;
+        line-height: 0.28rem;
+        text-align: center;
+        font-size: 0.14rem;
+        color: #FFFFFF;
+        background: #373737;
+        border-radius: 0.02rem;
+    }
+    .index-newest-more-bg {
+        width: 3.2rem;
+        height: 1.48rem;
+        position: absolute;
+        bottom: 0;
+        left: -0.08rem;
+        z-index: 10;
+        background: url('/static/images/Rectangle-bg.png') center no-repeat;
+        background-size: cover;
+    }
+}
+
+/*newest-end*/
+
+
+/*index-Downloadcode-start*/
+
+@media (max-width: 767px) {
+    .index-Downloadcode {
+        display: none;
+    }
+}
+
+
+/*index-Downloadcode-end*/
+
+
+/*index-feature-start*/
+
+@media (max-width: 767px) {
+    .index-feature {
+        margin-top: 0.2rem;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+    }
+    .index-feature-headline {
+        font-size: 0.14rem;
+        color: #373737;
+        height: 0.40rem;
+        line-height: 0.44rem;
+        text-align: center;
+        border-top: 0.02rem solid #373737;
+        background: #fff;
+    }
+    .index-feature-headline a {
+        font-size: 0.14rem;
+        color: #373737;
+    }
+    .index-feature-headline a:hover {
+        color: #55A5F6;
+    }
+    .index-global-headline {
+        height: 0.48rem;
+        line-height: 0.48rem;
+    }
+    .index-feature-lists-outer {
+        width: 3.04rem;
+        margin: 0 auto;
+        overflow: hidden;
+        background: #fff;
+        margin-top: 0;
+        /*position: relative;*/
+    }
+    .index-feature-lists {
+        width: 3.12rem;
+        overflow: hidden;
+    }
+    .index-feature-lists li {
+        width: 1.48rem;
+        height: 1.48rem;
+        float: left;
+        margin-right: 0.08rem;
+        margin-top: 0.08rem;
+    }
+    .index-feature-cover {
+        width: 1.48rem;
+        height: 0.9rem;
+        position: relative;
+        border-radius: 2px;
+    }
+    .index-feature-cover .index-feature-culumn {
+        position: absolute;
+        left: 0.1rem;
+        bottom: 0.1rem;
+    }
+    .index-feature-title {
+        margin-top: 0.04rem;
+        font-size: 0.12rem;
+        color: #373737;
+        line-height: 0.16rem;
+        max-height: 0.32rem;
+        overflow: hidden;
+    }
+    .index-feature-title a {
+        color: #373737;
+    }
+    .index-feature-info {
+        margin-top: 0.04rem;
+        overflow: hidden;
+    }
+    .index-feature-more {
+        position: absolute;
+        bottom: 0.10rem;
+        left: 50%;
+        z-index: 100;
+        margin-left: -0.60rem;
+        width: 1.20rem;
+        height: 0.30rem;
+        line-height: 0.30rem;
+        text-align: center;
+        font-size: 0.14rem;
+        color: #FFFFFF;
+        background: #373737;
+        border-radius: 0.02rem;
+        cursor: pointer;
+    }
+    .index-feature-more-bg {
+        left: 0.08rem;
+    }
+}
+
+
+/*index-feature-end*/
+
+
+/*index-hot-start*/
+
+@media (max-width: 767px) {
+    .index-hot {
+        margin-top: 0.2rem;
+        background: #fff;
+    }
+    .index-hot-lists {
+        width: 3.04rem;
+        margin: 0 auto;
+    }
+    .index-hot-lists li {
+        margin-bottom: 0.08rem;
+    }
+    .index-hot-lists .index-hot-cover-a {
+        display: inline-block;
+    }
+    .index-hot-active {
+        position: relative;
+        border-radius: 0.02rem;
+        overflow: hidden;
+    }
+    .index-hot-active .index-hot-cover {
+        width: 3.04rem;
+        height: 2.01rem;
+    }
+    .index-hot-active .index-hot-ranking {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 0.60rem solid #FFE300;
+        border-right: 0.60rem solid transparent;
+        width: 0;
+        height: 0;
+    }
+    .index-hot-active .index-hot-ranking span {
+        position: absolute;
+        top: -0.50rem;
+        left: 0.06rem;
+        font-family: HelveticaNeue-Bold;
+        font-size: 0.24rem;
+        color: #373737;
+    }
+    .index-hot-active .index-hot-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3.04rem;
+        background: rgba(0, 0, 0, 0.50);
+        padding: 0.1rem;
+    }
+    .index-hot-active .index-hot-title {
+        font-size: 0.14rem;
+        color: #FFFFFF;
+        line-height: 0.16rem;
+        max-height: 0.16rem;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .index-hot-active .index-hot-title:hover {
+        color: #55A5F6;
+    }
+    .index-hot-active .index-hot-culumn {
+        position: absolute;
+        top: 0.30rem;
+        left: 2.5rem;
+        margin: 0;
+    }
+    .index-hot-active .index-hot-author {
+        margin-top: 0.09rem;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.1rem;
+        color: rgba(255, 255, 255, 0.70);
+    }
+    .index-hot-item {
+        position: relative;
+        border-bottom: 0.01px dashed #E6E9ED;
+        padding-bottom: 0.10rem;
+        overflow: hidden;
+    }
+    .index-hot-item .index-hot-cover {
+        display: inline-block;
+        width: 1.20rem;
+        height: 0.72rem;
+        background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497252385820&di=bfccda760953bfd889f7111f2820bff1&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160622%2F184-160622152S7.jpg') center no-repeat;
+        background-size: cover;
+        border-radius: 0.02rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .index-hot-item .index-hot-ranking {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 0.36rem solid rgba(0, 0, 0, 0.50);
+        border-right: 0.36rem solid transparent;
+        width: 0;
+        height: 0;
+    }
+    .index-hot-item .index-hot-ranking span {
+        position: absolute;
+        top: -0.32rem;
+        left: 0.04rem;
+        font-family: HelveticaNeue-Bold;
+        font-size: 0.12rem;
+        color: #FFFFFF;
+    }
+    .index-hot-item .index-hot-info {
+        position: absolute;
+        top: 0;
+        left: 1.2rem;
+        display: inline-block;
+        margin-left: 0.08rem;
+        width: 1.76rem;
+        height: 0.72rem;
+        overflow: hidden;
+    }
+    .index-hot-item .index-hot-title {
+        height: 0, 4rem;
+        margin: 0;
+        max-height: 0.40rem;
+        min-height: 0.40rem;
+        font-size: 0.14rem;
+        color: #373737;
+        line-height: 0.20rem;
+        overflow: hidden;
+    }
+    .index-hot-item .index-hot-title a {
+        color: #373737;
+    }
+    .index-hot-item .index-hot-title a:hover {
+        color: #55A5F6;
+    }
+    .index-hot-item .index-hot-culumn {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 0.48rem;
+        height: 0.2rem;
+        margin: 0.12rem 0.10rem 0 0;
+        float: left;
+    }
+    .index-hot-item .index-hot-author {
+        margin-top: 0.14rem;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.1rem;
+        color: rgba(0, 0, 0, 0.54);
+        height:
+    }
+}
+
+
+
+/*index-hot-end*/
+
+
+/* ===========================================index-main-end========================================== */
+
+
+/* ===========================================topic-start========================================== */
+
+@media (max-width: 767px) {
+    .topic-main {
+        background: #f5faf7;
+    }
+    .topic-nav {
+        display: none;
+    }
+    .topic-left {
+        background: #fff;
+    }
+    .topic-right {
+        background: #fff;
+    }
+}
+
+
+
+/*topic-column && describe_strat*/
+
+@media (max-width: 767px) {
+    .topic-column {}
+    .topic-column-cover {
+        height: 2rem;
+    }
+    .topic-column-mask {
+        display: none;
+    }
+    .topic-column-info {
+        padding: 0.08rem 0.08rem 0 0.08rem;
+        background: #fff;
+    }
+    .topic-column-title {
+        font-size: 0.20rem;
+        color: #373737;
+        line-height: 0.24rem;
+        max-height: 0.52rem;
+        overflow: hidden;
+    }
+    .topic-column-con {
+        height: 0.26rem;
+        line-height: 0.26rem;
+        margin: 0.08rem auto 0;
+        overflow: hidden;
+    }
+    .topic-column-user {
+        float: left;
+        margin-left: 0.04rem;
+    }
+    .topic-column-user span {
+        float: left;
+        width: 0.26rem;
+        height: 0.26rem;
+        border-radius: 50%;
+    }
+    .topic-column-user var {
+        font-size: 0.12rem;
+        color: rgba(0, 0, 0, 0.38);
+        letter-spacing: 0;
+        text-shadow: 0 0.01rem 0.04rem rgba(0, 0, 0, 0.10);
+        margin-left: 0.06rem;
+    }
+    .topic-column-con em {
+        float: left;
+        width: 0.02rem;
+        height: 0.02rem;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.12);
+        margin: 0.12rem 0.10rem;
+    }
+    .topic-column-time {
+        float: left;
+        font-family: HelveticaNeue;
+        font-size: 0.12rem;
+        color: rgba(0, 0, 0, 0.38);
+    }
+    .topic-describe {
+        margin: 0 auto;
+        padding: 0.2rem 0;
+    }
+    .topic-describe-space {
+        height: 0.5rem;
+    }
+    .topic-describe hr {
+        width: 0.40rem;
+        margin: 0 auto;
+        border: 0.01rem dashed #E4E4E4;
+    }
+    .topic-describe p {
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.14rem;
+        color: rgba(0, 0, 0, 0.54);
+        line-height: 0.24rem;
+        padding: 0.2rem 0.08rem;
+    }
+}
+
+/*topic-column && describe_end*/
+
+
+/*topic-content-story_start*/
+
+@media (max-width: 767px) {
+    .topic-content-story {
+        /*width:3.04rem;
+        margin:0 auto;*/
+        padding: 0 0.08rem;
+    }
+    .topic-content-story img {
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    .topic-content-story p {
+        padding: 0.08rem 0 0.2rem 0.12rem;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.14rem;
+        color: #373737;
+        line-height: 0.20rem;
+    }
+    .topic-content-story hr {
+        width: 0.42rem;
+        border: 0.01rem solid #DFDFDF;
+        margin: 0 auto;
+        margin-bottom: 0.2rem;
+    }
+}
+
+/*topic-content-story_end*/
+
+
+/*topic-content-face_start*/
+
+@media (max-width: 767px) {
+    .topic-content-face {
+        /*padding:0 0.08rem;*/
+        width: 3.02rem;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .topic-content-face-lists {
+        width: 3.06rem;
+        overflow: hidden;
+    }
+    .topic-content-face-lists li {
+        float: left;
+        width: 0.98rem;
+        height: 0.98rem;
+        margin: 0 0.04rem 0.04rem 0;
+        border-radius: 0.02rem;
+        overflow: hidden;
+    }
+}
+
+
+
+/*topic-content-face_end*/
+
+
+/*topic-left-bottom_start*/
+
+@media (max-width: 767px) {
+    .topic-left-bottom {
+        width: 3.2rem;
+        height: 0.8rem;
+        background: url('/static/images/topic-left-bottom.png') center center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/*topic-left-bottom_end*/
+
+
+/*topic-next &&look_start*/
+
+@media (max-width: 767px) {
+    .index-Downloadcode {
+        display: none;
+    }
+    .topic-next {
+        display: none;
+    }
+    .topic-look {
+        margin-top: 0.2rem;
+    }
+    .topic-head {
+        font-size: 0.14rem;
+        color: #373737;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.12);
+    }
+    .topic-next-lists {
+        padding-left: 0.08rem;
+        overflow: hidden;
+        padding-bottom: 0.86rem;
+    }
+    .topic-next-item .newest-images {
+        display: none;
+    }
+    .topic-next-item .newset-time {
+        display: none;
+    }
+    .topic-next-item .newset-info {
+        overflow: hidden;
+    }
+    .topic-next-item-other {
+        float: left;
+        width: 1.48rem;
+        min-height: 1.48rem;
+        margin-right: 0.08rem;
+        position: relative;
+        border-radius: 0.02rem;
+        overflow: hidden;
+    }
+    .topic-next-item-other .newest-cover-a {
+        width: 1.48rem;
+        height: 0.9rem;
+        border-radius: 0.02rem;
+        overflow: hidden;
+    }
+    .topic-next-item-other .newset-info {
+        height: 0.16rem;
+        margin-top: 0.04rem;
+    }
+    .topic-next-item-other .newset-culumn {
+        position: absolute;
+        top: 0.62rem;
+        left: 0;
+    }
+    .topic-next-item-other .newset-classify {
+        display: none;
+        /*margin-right: 0.18rem;*/
+    }
+    .topic-next-item-other .newset-author {
+        padding-left: 0;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.10rem;
+        color: rgba(0, 0, 0, 0.54);
+    }
+    .topic-next-item-other .newest-title {
+        font-size: 0.12rem;
+        color: #373737;
+        line-height: 0.16rem;
+        max-height: 0.32rem;
+        overflow: hidden;
+        margin-top: 0.04rem;
+    }
+    .topic-next-item-first {
+        width: 3.04rem;
+        margin-right: 0.08rem;
+        position: relative;
+        height: 2rem;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .topic-next-item-first .newest-cover-a {
+        height: 2rem;
+        width: 3.04rem;
+    }
+    .topic-next-item-first .newset-info {
+        width: 3.04rem;
+        height: 0.62rem;
+        background: rgba(0, 0, 0, 0.50);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+    .topic-next-item-first .newset-culumn {
+        display: none;
+    }
+    .topic-next-item-first .newset-classify {
+        display: none;
+        /*color: rgba(255, 255, 255, 0.70);
+        float: left;
+        margin: 0.35rem 0 0 0.1rem;
+        height: 0.16rem;
+        line-height: 0.17rem;*/
+    }
+    .topic-next-item-first .newset-author {
+        padding-left: 0.08rem;
+        float: left;
+        margin: 0.35rem 0 0 0;
+        font-family: "STXihei", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 0.10rem;
+        color: rgba(255, 255, 255, 0.70);
+        letter-spacing: 0;
+    }
+    .topic-next-item-first .newest-title {
+        width: 2.94rem;
+        height: 0.16rem;
+        position: absolute;
+        bottom: 0.35rem;
+        left: 0.08rem;
+        z-index: 100;
+        font-size: 0.14rem;
+        color: #FFFFFF;
+        line-height: 0.16rem;
+        margin: 0;
+    }
+}
+
+/*topic-next&&look_end*/
+
+
+/* ===========================================topic-end========================================== */
+
+
+/* ===========================================feature-start========================================== */
+
+
+/*feature-top&&nav_strat*/
+
+@media (max-width: 767px) {
+    .feature-top {
+        width: 3.2rem;
+        height: 1.5rem;
+    }
+    .feature-navigation {
+        display: none;
+    }
+}
+
+
+
+/*feature-top&&nav_end*/
+
+
+/*feature-list_start*/
+
+@media (max-width: 767px) {
+    .feature-list-outer {
+        width: 3.04rem;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 0.95rem;
+    }
+    .feature-list {
+        width: 3.12rem;
+        overflow: hidden;
+    }
+    .feature-list .feature-item {
+        width: 1.48rem;
+        min-height: 1.50rem;
+        margin: 0.08rem 0.08rem 0 0;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+
+/*feature-list_end*/
+
+
+/* ===========================================feature-end========================================== */
+
+
+/* ===========================================search-start========================================== */
+
+
+/*search—navigation-start*/
+
+@media (max-width: 767px) {
+    .search-navigation-outer {
+        overflow: hidden;
+        border-bottom: 0.01rem solid #DFDFDF;
+    }
+    .search-navigation {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-bottom: none;
+        overflow: hidden;
+    }
+    .search-navigation li {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        color: #9E9E9E;
+        font-size: 0.14rem;
+        float: left;
+        margin: 0 0.6rem;
+        border-bottom: 0.04rem solid transparent;
+        cursor: pointer;
+    }
+    .search-navigation .search-navigation-active {
+        font-size: 0.14rem;
+        border-bottom: 0.04rem solid #373737;
+        color: #373737;
+    }
+    .search-hint {
+        display: none;
+    }
+}
+
+/*search—navigation-end*/
+
+
+/*search-topic-start*/
+
+@media (max-width: 767px) {
+    .search-topic-outer {
+        padding-bottom: 1.28rem;
+        position: relative;
+        width: 3.04rem;
+        margin: 0.08rem auto;
+    }
+    .search-topic-outer .index-hot-lists li {
+        width: 3.04rem;
+    }
+    .search-empty {
+        width: 2rem;
+        margin: 0.57rem auto 1.48rem;
+    }
+    .search-empty h3 {
+        font-family: STHeiti;
+        font-size: 0.14rem;
+        color: rgba(0, 0, 0, 0.54);
+        text-align: center;
+    }
+    .search-empty img {
+        width: 2rem;
+        height: 1.5rem;
+        margin-top: 0.3rem;
+    }
+    .search-list {
+        width: 3.04rem;
+    }
+    .search-list .index-hot-item {
+        padding-top: 0.08rem;
+    }
+    .search-item {
+        width: 3.04rem;
+        height: 0.92rem;
+        box-sizing: border-box;
+        padding: 0.08rem 0 0.1rem 0;
+        border-bottom: 0.01rem dashed #ECECEE;
+        overflow: hidden;
+    }
+    .search-item .newest-cover-a {
+        display: inline-block;
+        width: 1.2rem;
+        height: 0.72rem;
+        border-radius: 0.02rem;
+    }
+    .search-item a {
+        display: inline-block;
+    }
+    .search-item .newest-item-right {
+        width: 1.76rem;
+        margin-left: 0.08rem;
+        display: inline-block;
+    }
+    .search-item .newest-title {
+        width: 1.76rem;
+        font-family: STHeiti;
+        font-size: 0.14rem;
+        color: #373737;
+        line-height: 0.20rem;
+        max-height: 0.4rem;
+        min-height: 0.4rem;
+        overflow: hidden;
+        padding-left: 0.08rem;
+        margin: 0;
+        display: inline-block;
+    }
+    .search-item .newest-title:hover {
+        color: #55A5F6;
+    }
+    .search-item .newset-info {
+        display: inline-block;
+        width: 1.76rem;
+        margin-top: 0.13rem;
+        margin-left: 0.08rem;
+        height: 0.2rem;
+        position: relative;
+    }
+    .search-item .newset-culumn {
+        position: static;
+        float: left;
+        width: 0.48rem;
+        height: 0.20rem;
+        line-height: 0.20rem;
+        text-align: center;
+        margin-right: 0.10rem;
+        font-size: 0.10rem;
+        color: #FFFFFF;
+        /*border: 0.01rem solid #53C252;*/
+        border: none;
+        border-radius: 0.02rem;
+        background: #5FDD5E;
+        box-sizing: border-box;
+    }
+    .search-item .newset-classify {
+        display: none;
+    }
+    .search-item .newset-author {
+        float: left;
+        font-size: 0.1rem;
+        color: rgba(0, 0, 0, 0.54);
+        height: 0.20rem;
+        line-height: 0.20rem;
+        padding: 0;
+    }
+    .search-item .newset-author span {
+        float: left;
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 50%;
+        margin-right: 0.04rem;
+        margin-top: 0.02rem;
+        background: url(http://4493bz.1985t.com/uploads/allimg/160624/3-160624133107.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    .search-item .newset-time {
+        display: none;
+    }
+    .search-item .newset-images {
+        display: none;
+    }
+    .search-item .newset-images-more {
+        display: none;
+    }
+}
+
+
+
+/*search-topic-end*/
+
+
+/*search-picture&& hint-start*/
+
+@media (max-width: 767px) {
+    .search-picture-outer {
+        padding-bottom: 1.28rem;
+        position: relative;
+        width: 3.04rem;
+        margin: 0 auto;
+    }
+    .search-picture-lists {
+        width: 3.08rem;
+    }
+    .search-picture-item {
+        display: inline-block;
+        width: 1.50rem;
+        padding-top: 0.1rem;
+        margin-right: 0.04rem;
+    }
+    .search-picture-hint {
+        /*height: 0.12rem;*/
+        width: 1.38rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0.86rem;
+        margin-left: -0.69rem;
+        overflow: hidden;
+    }
+    .search-picture-hint hr {
+        float: left;
+        width: 0.36rem;
+        color: rgba(0, 0, 0, 0.12);
+        line-height: 0.12rem;
+        margin-top: 0.06rem;
+    }
+    .search-picture-hint p {
+        float: left;
+        font-family: STXihei;
+        font-size: 0.12rem;
+        color: rgba(0, 0, 0, 0.54);
+    }
+}
+
+/*search-picture-end*/
+
+/* ===========================================search-end========================================== */
